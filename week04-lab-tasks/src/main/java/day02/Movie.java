@@ -1,4 +1,4 @@
-package day01;
+package day02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,9 +21,12 @@ public class Movie {
 
     public int actorsInTheirTwenties() {
         int actorsInTheirTwenties = 0;
+        int age;
 
         for (Actor actor : actorList) {
-            if (yearOfPremiere - actor.getYearOfBirth() == 20) {
+            age = yearOfPremiere - actor.getYearOfBirth();
+
+            if (20 <= age && age < 30) {
                 actorsInTheirTwenties += 1;
             }
         }
