@@ -1,6 +1,6 @@
 package day05;
 
-public class PlainMain {
+public class PlaneMain {
     public static void main(String[] args) {
         Plane plane = new Plane(100);
 
